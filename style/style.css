@@ -1,0 +1,143 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.header{
+	margin-top: 15px;
+}
+
+.judul1{
+	margin-right: 200px;
+}
+
+.nav .nav-item{
+	padding-left: 50px;
+	align-items: center;
+}
+
+.login1{
+	margin-left: 180px;
+}
+
+
+.home-nav-link{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.home-nav-link:hover::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #0B63DC;
+	width: 50%;
+	margin: auto;
+	padding-bottom: 5px;
+	margin-bottom: -8px;
+}
+
+.content{
+	margin-left: 12px;
+	margin-top: 150px;
+}
+
+.content img {
+	display: inline-block;
+	width: 70%;
+}
+
+.login{
+	border-radius: 40px;
+	width: 150px;
+}
+
+.beli{
+	width: 150px;
+	height: 50px;
+	border-radius: 40px;
+}
+
+.content h1{
+	font-weight: bold;
+}
+
+
+/* halaman toko*/
+
+.nav-toko .nav-link{
+	color: black;
+	text-decoration: none;
+}
+
+.nav-toko .nav-link:hover::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #0B63DC;
+	width: 9%;
+}
+
+.kartu {
+	display: inline-flex;
+}
+
+.toko-beli{
+	border-radius: 40px;
+}
+
+.toko-keranjang{
+	border-radius: 40px;
+}
+
+.kartu1 .card-body .harga{
+	margin: 50px;
+}
+
+.kolom1 .nama-ikan {
+	margin: 40px;
+}
+
+.kartu2 .card-body .harga{
+	margin: 50px;
+}
+
+.kolom2 .nama-ikan {
+	margin: 40px;
+}
+
+.kartu3 .card-body .harga{
+	margin: 50px;
+}
+
+.kolom3 .nama-ikan {
+	margin: 40px;
+}
+
+.kartu1 .gambar1{
+	width: 100%;
+}
+
+.kartu2 .gambar2{
+	width: 97%;
+}
+
+.kartu3 .gambar3{
+	width: 100%;
+}
+
+
+
+/* halaman login */
+.kolom1-login{
+	margin: 20px;
+	margin-left: 100px;
+}
+
+
+
+.bg-login{
+	background-image: cover;
+	width: 820px;
+	height: 727px;
+	margin: -10px;
+}

@@ -133,11 +133,122 @@
 	margin-left: 100px;
 }
 
+.kolom1-login h1, h4, label, span{
+	font-weight: bold;
+}
 
+.kolom1-login .tbl-google {
+	border-radius: 40px;
+	color: black;
+	font-weight: bold;
+	border: solid #E8E8E8;
+	width: 100%;
+	height: 45px;
+}
+
+.or {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(245 239 239);
+	line-height: 0.1em;
+	margin: 25px 0;
+}
+.or span {
+	background: #fff;
+	padding: 0 10px;
+}
+
+.input-eml {
+	border-radius: 40px;
+	width: 100%;
+	height: 43px;
+}
+
+::placeholder {
+	padding-left: 20px;
+	font-size: 18px;
+}
+
+.input-pswd {
+	border-radius: 40px;
+	width: 100%;
+	height: 43px;
+}
+
+.lupa-pswd{
+	padding-left: 350px;
+}
+
+.lupa-pswd a {
+	text-decoration: none;
+}
+
+
+.kolom1-login .sign-google{
+	display: inline-block;
+	font-size: 10px;
+}
+
+.login-btn {
+	border-radius: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+.buat-akun a{
+	text-decoration: none;
+}
 
 .bg-login{
 	background-image: cover;
-	width: 820px;
-	height: 727px;
+	width: 1220px;
+	height: 892px;
 	margin: -10px;
+}
+
+
+/* halaman register */
+
+.kolom1-register{
+	margin: 80px;
+	margin-left: 100px;
+}
+
+.input-nama-depan {
+	border-radius: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+.input-nama-belakang {
+	border-radius: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+.input-email {
+	border-radius: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+.input-paswd {
+	border-radius: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+
+.kolom1-register .sudahpunya-akun, p, h1, h4{
+	font-weight: bold;
+}
+
+.sudahpunya-akun a {
+	text-decoration: none;
+}
+
+.register-btn {
+	border-radius: 40px;
+	width: 100%;
+	height: 40px;
 }

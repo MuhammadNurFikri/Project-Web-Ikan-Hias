@@ -3,6 +3,8 @@
 	margin: 0;
 }
 
+/* halaman beranda */
+
 .header{
 	margin-top: 15px;
 }
@@ -202,8 +204,46 @@
 .bg-login{
 	background-image: cover;
 	width: 1220px;
-	height: 892px;
+	height: 100%;
 	margin: -10px;
+}
+
+/* login device responsive */
+
+/* untuk laptop */
+
+@media (min-width: 992px) {
+	.bg-login {
+		width: 800px;
+		height: 785px;
+	}
+}
+
+
+/* untuk mobile */
+@media (max-width: 768px) {
+	.kolom2-login, .bg-login {
+		width: 0%;
+		height: 0%;
+		display: none;
+	}
+
+	.kolom1-login{
+		margin: 10px;
+		margin-left: 15px;
+	}
+
+	.login-btn {
+		border-radius: 40px;
+		width: 100%;
+		height: 40px;
+	}
+
+	.lupa-pswd{
+		display: inline-block;
+		padding-left: 250px;
+	}
+
 }
 
 
@@ -251,4 +291,47 @@
 	border-radius: 40px;
 	width: 100%;
 	height: 40px;
+}
+
+/* register device responsive */
+
+/* untuk laptop */
+
+@media (min-width: 992px) {
+	.bg-register {
+		width: 800px;
+		height: 785px;
+	}
+}
+
+
+/* untuk mobile */
+@media (max-width: 768px) {
+	.kolom2-register, .bg-register {
+		width: 0%;
+		height: 0%;
+		display: none;
+	}
+
+	.kolom1-register{
+		margin: 20px;
+		margin-left: 30px;
+	}
+
+	::placeholder {
+		padding-left: 10px;
+		font-size: 14px;
+	}
+
+	.register-btn {
+		border-radius: 40px;
+		width: 100%;
+		height: 40px;
+	}
+
+	.lupa-pswd{
+		display: inline-block;
+		padding-left: 250px;
+	}
+
 }

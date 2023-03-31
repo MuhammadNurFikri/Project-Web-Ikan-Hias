@@ -39,71 +39,138 @@
 
 		<div class="content">
 			<div class="row">
-				<div class="col">
-					<h3>JENIS IKAN</h3>
+				<div class="col-3">
+					<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<h3 class="justify-content-center">JENIS IKAN</h3>
+						<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Louhan</button>
+						<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cupang</button>
+						<button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Guppy</button>
+						<button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Arwana</button>
+					</div>
+					<!-- <h3>JENIS IKAN</h3>
 					<nav class="nav-toko nav flex-column">
 						<a class="nav-link active" aria-current="page" href="#">Louhan</a>
 						<a class="nav-link" href="#">Cupang</a>
 						<a class="nav-link" href="#">Guppy</a>
 						<a class="nav-link" href="#">Arwana</a>
 						<a class="nav-link" href="#">Koi</a>
-					</nav>
+					</nav> -->
 				</div>
 				<div class="col-6">
-					<div class="kartu row row-cols-1 row-cols-md-3 g-4">
-						<div class="kolom1 col">
-							<span class="nama-ikan">Cupang Fancy</span>
-							<div class="kartu1">
-								<img src="img/cupang.png" class="gambar1 card-img-top" alt="...">
-								<div class="card-body">
-									<span class="harga">RP 200.000</span>
-									<br>
-									<br>
-									<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-										<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-									</svg></button>
-									<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+					<div class="tab-content" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+							<div class="kartu">
+							<div class="kolom1 col">
+								<span class="nama-ikan">Louhan 1</span>
+								<div class="kartu1">
+									<img src="img/lohan1.png" height="221" class="gambar1 card-img-top" alt="...">
+									<div class="card-body">
+										<span class="harga">RP 200.000</span>
+										<br>
+										<br>
+										<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+											<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+										</svg></button>
+										<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="kolom2 col">
-							<span class="nama-ikan">Cupang Fancy</span>
-							<div class="kartu2">
-								<img src="img/cupang2.png" class="gambar2 card-img-top" alt="...">
-								<div class="card-body">
-									<span class="harga">RP 200.000</span>
-									<br>
-									<br>
-									<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-										<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-									</svg></button>
-									<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+							<div class="kolom2 col">
+								<span class="nama-ikan">Cupang Fancy</span>
+								<div class="kartu2">
+									<img src="img/lohan1.png" height="221" class="gambar2 card-img-top" alt="...">
+									<div class="card-body">
+										<span class="harga">RP 200.000</span>
+										<br>
+										<br>
+										<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+											<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+										</svg></button>
+										<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="kolom3 col">
-							<span class="nama-ikan">Cupang Fancy</span>
-							<div class="kartu3">
-								<img src="img/cupang.png" class="gambar3 card-img-top" alt="...">
-								<div class="card-body">
-									<span class="harga">RP 200.000</span>
-									<br>
-									<br>
-									<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-										<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-									</svg></button>
-									<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+							<div class="kolom3 col">
+								<span class="nama-ikan">Cupang Fancy</span>
+								<div class="kartu3">
+									<img src="img/lohan1.png" height="221" class="gambar3 card-img-top" alt="...">
+									<div class="card-body">
+										<span class="harga">RP 200.000</span>
+										<br>
+										<br>
+										<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+											<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+										</svg></button>
+										<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+						</div>
+						<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+							<div class="kartu">
+							<div class="kolom1 col">
+								<span class="nama-ikan">Cupang Fancy</span>
+								<div class="kartu1">
+									<img src="img/cupang.png" class="gambar1 card-img-top" alt="...">
+									<div class="card-body">
+										<span class="harga">RP 200.000</span>
+										<br>
+										<br>
+										<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+											<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+										</svg></button>
+										<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+									</div>
+								</div>
+							</div>
+							<div class="kolom2 col">
+								<span class="nama-ikan">Cupang Fancy</span>
+								<div class="kartu2">
+									<img src="img/cupang2.png" class="gambar2 card-img-top" alt="...">
+									<div class="card-body">
+										<span class="harga">RP 200.000</span>
+										<br>
+										<br>
+										<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+											<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+										</svg></button>
+										<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+									</div>
+								</div>
+							</div>
+							<div class="kolom3 col">
+								<span class="nama-ikan">Cupang Fancy</span>
+								<div class="kartu3">
+									<img src="img/cupang.png" class="gambar3 card-img-top" alt="...">
+									<div class="card-body">
+										<span class="harga">RP 200.000</span>
+										<br>
+										<br>
+										<button class="toko-beli btn btn-primary">BELI <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+											<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+										</svg></button>
+										<button class="toko-keranjang btn btn-outline-primary">KERANJANG</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+							
+						</div>
+						<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+					</div>
+					
+				
 
-				<div class="col">
+				<div class="col-sm">
 					<h3>RP 100.000 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
 						<path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
 						<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
 					</svg></h3>
+				</div>
 				</div>
 			</div>
 		</div>
